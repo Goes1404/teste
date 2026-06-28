@@ -21,6 +21,21 @@ export default function HomePage() {
   return (
     <div style={{ padding: 20 }}>
       <Header />
+      <a
+        href="/portal"
+        style={{
+          display: 'inline-block',
+          marginBottom: 16,
+          padding: '8px 16px',
+          background: '#2A1560',
+          color: '#fff',
+          borderRadius: 8,
+          textDecoration: 'none',
+          fontWeight: 600,
+        }}
+      >
+        Abrir Portal do Aluno →
+      </a>
       <NotesForm />
       <SearchBar onSearch={setSearch} />
       <NotesList notes={filteredNotes} />
